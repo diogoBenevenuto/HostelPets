@@ -3,50 +3,79 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - HostelPets.View</title>
+    <title>HostelPets - O .</title>
+    <link rel="shortcut icon" href="~/css/img/Black.png" type="image/x-icon" />
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/HostelPets.View.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Locadora.View.styles.css" asp-append-version="true" />
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">HostelPets.View</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Home">Hospede seu pet</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2022 - HostelPets.View - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
+    <header class="header">  <div class="container">
+              <nav class="nav-list">
+                      
+            <a class="nav-link" id asp-area="" asp-controller="Home" asp-action="Index"><img src="~/css/img/Hotel Pets sem fundo.png" width="220" height="150" alt="HostelPets" draggable="false" /></a>             
+          
+                      
+               
+                    <button class="btn" type="button">
+                      <a class="btn" asp-area="" asp-controller="Home" asp-action="XXX">Sobre Nós</a>
+                    </button>
+                    <button class="btn" type="button">
+                      <a class="btn" asp-area="" asp-controller="Home" asp-action="XXX">Conheça Nossos Serviços</a>
+                    </button>
+                    <button class="btn" type="button">
+                      <a class="btn" asp-area="" asp-controller="Home" asp-action="XXX">Contatos</a>
+                    </button>
+                  <div class="btnEntrar">
+                    <button class="btn" type="button">
+                        <a class="btn" asp-area="" asp-controller="Home" asp-action="Login">Entrar</a>
+                        </button>
+                  </div>
+                  </nav>                   
+              </nav>
+     
+                          
+              
+        
+             @*<a href="#">Entrar</a>*@
+        </header>
+                      <div class="btn-group">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="Menu" data-bs-toggle="dropdown" aria-expanded="false">
+    Menu
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="XXX">Sobre Nós</a></li>
+    <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="XXX">Conheça Nossos Serviços</a></li>
+    <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="XXX">Contatos</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Login">Entrar</a></li>
+  </ul>
+</div>    
+        
+            @*<div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="MenuIndex" data-bs-toggle="dropdown" aria-expanded="false">
+                MENU
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="MenuIndex">
+                <li><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Início</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a></li>             
+                <li><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Filmes">Filmes</a></li>
+              </ul>
+           
+             </div>*@
+
+    @RenderBody()
+
+
+         <footer  class="footer">
+        <p class="text-center">&copy; 2022 | Designed With by Vitor Ribeiro & Diogo Benevenuto | HostelPets</p>
+        </footer>
+    
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
-</body>
+
 </html>

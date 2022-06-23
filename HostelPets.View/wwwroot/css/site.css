@@ -1,18 +1,261 @@
-html {
-  font-size: 14px;
+
+
+html, body {
+    background-image: url('img/Background1 - Copia.jpeg');
+    background-repeat: no-repeat;
+    background-size:100%;
+    position:absolute;
+    bottom:0;left:0;right:0;top:0;
+    overflow:auto;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 3em;
+    overflow-x:hidden;
+}
+    
+    .index {
+        font-family: sans-serif;
+        color: white;
+    }
+
+
+    .container {
+        max-width: 1130px;
+        margin: 0 auto;
+    }
+
+.header {
+    background: rgb(0,0, 0, 0);
+    position: absolute;
+    top: 20px;
+    padding: 0;
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 2000px;
+    color: white;
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+        .header a {
+            position: relative;
+            text-align:center;
+            color: white;
+        }
+
+    .nav-link {
+        display:block;
+        position: absolute;
+        height:0;
+        width:0;
+        color: white;
+        bottom:70px;
+        right:370px;
+    }
+
+    .header button {
+        position: relative;
+        color: white;
+        text-align:center;
+        border: 0px;
+        margin-inline: 90px; /*        distancia do header       */
+        right: 150px;
+        border: 20px solid;
+        border-radius: 20px;
+        border: 10px;
+    }
+
+        .header button:hover {
+            position: center;
+            background: white;
+            color: black;
+            border: 20px solid;
+            border-radius: 20px;
+            border: 10px;
+        }
+
+    .btnEntrar {
+        position:fixed;
+        right:-180px;
+    }
+    
+
+    nav {
+        display:flex;
+        justify-content:space-around;
+        align-items:center;
+        font-family:system-ui,-apple-system, Helvetica, Arial, sans-serif;
+        height: 8vh;
+    }
+    .nav-list {
+        list-style:none;
+        display:flex;
+    }
+    .nav-list li{
+        letter-spacing: 3px;
+        margin-left: 32px;
+    }
+.btn-group {
+    display: none;
+    z-index: 1;
+}
+.dropdown-menu {
+    background: black;
+    color: white;
+    border: 10px solid;
+    border-radius: 10px;
+    border: 10px;
+    z-index: 1;
+}
+    
+/* .cad {
+            position: relative;
+            top: 40px;
+            right:130px;
+            color: black;
+            height: 100%;
+            width: 100%;
+            border: 10px solid;
+            border-radius: 5px;
+            border: 10px;
+        }
+    
+
+        .cad:hover {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            background: white;
+            color: black;
+
+        }*/
+.container-fluid a {
+    background: rgba(0, 0, 0, 0);
+    color: white;
+    text-shadow: none;
+    text-decoration: inherit;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
+.main {
+    height: 500px;
+    width:500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: center;
+    text-align: center;
 }
 
-body {
-  margin-bottom: 60px;
-}
+    .main-child {
+        z-index: 1;
+        display: grid;
+        justify-items: center;
+    }
+
+    .main h1 {
+        font-size: 64px;
+        font-weight: bold;
+        max-width: 480px;
+        position: relative;
+    }
+
+    .main span {
+        font-size: 26px
+    }
+
+    .main span {
+        font-size: 19px
+    }
+
+
+    .form-cta {
+        display: grid;
+        grid-template-columns: 480px 200px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+        .form-cta input {
+            padding: 12px 10px;
+            font-size: 18px;
+            font-family: sans-serif;
+        }
+
+        .form-cta button {
+            background: rgb(0, 0, 0,0.8);
+            outline: none;
+            border: none;
+            color: white;
+            font-size: 20px;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+            .form-cta button::after {
+                content: "";
+                display: inline-block;
+                width: 10px;
+                height: 20px;
+                background: url("../img/seta.svg");
+                margin-left: 20px;
+            }
+
+            .form-cta button:hover {
+                background: #A9A9A9;
+                color: black;
+            }
+
+    .gradient {
+        background: rgb(0, 0, 0,0.1);
+        background-image: linear-gradient( to top, rgba(0,0,0,0.8) 0, rgba(0,0,0,0) 60%, rgba(0,0,0,8) 100% );
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+
+
+    .footer {
+        position: absolute;
+        bottom:0;
+        left:0;
+        width:100%;
+        text-align:center;
+        background: black;
+        text-align: center;
+    }
+
+        .footer p {
+            position:relative;
+            top:10px;
+            color: #757575;
+            font-size: 13px;
+        }
+
+
+     @media all and (max-width:900px){
+         .nav-list{
+             display:none;
+         }
+        .btn-group {
+            display: block;
+            position:fixed;
+            top:1vw;
+            right:1vw;
+            z-index:3;
+        }
+        .dropdown-menu {
+            background: black;
+            color: white;
+            border: 10px solid;
+            border-radius: 10px;
+            border: 10px;
+            z-index: 2;
+        }
+
+     }
