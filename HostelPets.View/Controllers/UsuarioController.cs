@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿/*using Microsoft.AspNetCore.Mvc;
 using HostelPets.View.Models;
 using Microsoft.Data.SqlClient;
 
@@ -17,7 +17,7 @@ namespace HostelPets.View.Controllers
         }
         void connectionString()
         {
-            con.ConnectionString = "DESKTOP-0P8LOCH\SQLEXPRESS; database=HostelPets; integrated security = SSPI;";
+            con.ConnectionString = "data source=DESKTOP-0P8LOCH; database=HostelPets; integrated security = SSPI;";
 
         }
         public IActionResult Veritfy(Usuarios acc)
@@ -30,7 +30,7 @@ namespace HostelPets.View.Controllers
             if (dr.Read())
             {
                 con.Close();
-                return View(Create);
+                return View(Sucess);
             }
             else
             {
@@ -42,4 +42,4 @@ namespace HostelPets.View.Controllers
     }
 
             
-    }
+    }*/

@@ -7,9 +7,6 @@
     <link rel="shortcut icon" href="~/css/img/Black.png" type="image/x-icon" />
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/Locadora.View.styles.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/style/font-awesome.css"/>    
-    <link rel="stylesheet" href="~/style/font-awesome.min.css"/>
 
 </head>
 
@@ -21,13 +18,13 @@
                       
                
                     <button class="btn" type="button">
-                      <a class="btn" asp-area="" asp-controller="Home" asp-action="XXX">Sobre Nós</a>
+                      <a class="btn" asp-area="" asp-controller="Sobre" asp-action="Index">Sobre Nós</a>
                     </button>
                     <button class="btn" type="button">
-                      <a class="btn" asp-area="" asp-controller="Home" asp-action="XXX">Conheça Nossos Serviços</a>
+                      <a class="btn" asp-area="" asp-controller="Serviços" asp-action="Index">Conheça Nossos Serviços</a>
                     </button>
                     <button class="btn" type="button">
-                      <a class="btn" asp-area="" asp-controller="Home" asp-action="XXX">Contatos</a>
+                      <a class="btn" asp-area="" asp-controller="Contatos" asp-action="Index">Contatos</a>
                     </button>
                   <div class="btnEntrar">
                     <button class="btn" type="button">
@@ -47,11 +44,11 @@
     Menu
   </button>
   <ul class="dropdown-menu dropdown-menu-end">
-    <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="XXX">Sobre Nós</a></li>
-    <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="XXX">Conheça Nossos Serviços</a></li>
-    <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="XXX">Contatos</a></li>
+    <li><a class="dropdown-item" asp-area="" asp-controller="Sobre" asp-action="Index">Sobre Nós</a></li>
+    <li><a class="dropdown-item" asp-area="" asp-controller="Serviços" asp-action="Index">Conheça Nossos Serviços</a></li>
+    <li><a class="dropdown-item" asp-area="" asp-controller="Contatos" asp-action="Index">Contatos</a></li>
     <li><hr class="dropdown-divider"></li>
-    <li><a class="dropdown-item" asp-area="" asp-controller="Login" asp-action="Login">Entrar</a></li>
+    <li><a class="dropdown-item" asp-area="" asp-controller="Login" asp-action="Index">Entrar</a></li>
   </ul>
 </div>    
         
