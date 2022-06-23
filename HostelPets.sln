@@ -5,7 +5,7 @@ VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HostelPets.View", "HostelPets.View\HostelPets.View.csproj", "{D92E9206-7856-4E42-99F3-FE6EDA977923}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HostelPetsWeb.Model", "HostelPetsWeb.Model\HostelPetsWeb.Model.csproj", "{D4B73537-954A-4184-B4D2-9771D4FA721C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HostelPetsWeb.Model", "HostelPetsWeb.Model\HostelPetsWeb.Model.csproj", "{D4B73537-954A-4184-B4D2-9771D4FA721C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
