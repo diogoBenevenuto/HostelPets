@@ -24,6 +24,7 @@ html, body {
 }
 
 .formes{
+    max-width: 500px;
     position: relative;
     right:100px;
 }
@@ -37,12 +38,13 @@ html, body {
 #homeServ {
     width: 100%;
     height: 100%;
-    background-image: url(img/Serviços.png);
-    background-size: contain;
+    background-image: url('img/Sem título.png');
+    background-size: 77%;
     background-position: center;
 }
 
 #homecont {
+    position:absolute;
     width: 100%;
     height: 100%;
     background-image: url('img/Contatos (1) - Copia.png');

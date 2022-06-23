@@ -1,4 +1,4 @@
-﻿/*using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using HostelPets.View.Models;
 using Microsoft.Data.SqlClient;
 
@@ -20,26 +20,27 @@ namespace HostelPets.View.Controllers
             con.ConnectionString = "data source=DESKTOP-0P8LOCH; database=HostelPets; integrated security = SSPI;";
 
         }
-        public IActionResult Veritfy(Usuarios acc)
+        [HttpPost]
+        public IActionResult Verify(Usuarios acc)
         {
             connectionString();
             con.Open();
             com.Connection = con;
-            com.CommandText = "select * from login where nome_cliente '"+acc.Name+"' and senha_cliente='"+acc.Password+"'";
+            com.CommandText = "select * from login where nome_cliente '" + acc.Name + "' and senha_cliente='" + acc.Password + "'";
             dr = com.ExecuteReader();
             if (dr.Read())
             {
                 con.Close();
-                return View(Sucess);
+                return View("Sucess");
             }
             else
             {
                 con.Close();
-                return View(Error);
+                return View("Error");
             }
         }
-        }
     }
+}
 
             
-    }*/
+ 
